@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Terms of Use",
-  description: "Initial terms for using the ToolStack online utilities.",
+  description: "Initial terms for using the quicktools-online.com utilities.",
   alternates: { canonical: "/terms" },
 };
 
@@ -12,7 +12,7 @@ export default function TermsPage() {
       <p className="eyebrow">Before you use the tools</p>
       <h1>Terms of use</h1>
       <p className="legal-updated">Last updated: September 26, 2026</p>
-      <p>This initial draft covers the current ToolStack tools. It needs review for the operator&apos;s jurisdiction and business model before public launch.</p>
+      <p>This initial draft covers the current quicktools-online.com tools. It needs review for the operator&apos;s jurisdiction and business model before public launch.</p>
       <h2>Using the tools</h2>
       <p>You may use the tools for lawful purposes. You are responsible for the content you enter and for checking that any output is suitable for your needs.</p>
       <h2>Availability and results</h2>

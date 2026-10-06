@@ -261,7 +261,7 @@ h1, h2, p { margin-top: 0; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
 
-/* ToolStack's monochrome palette and the reference-inspired home layout. */
+/* quicktools-online.com's monochrome palette and the reference-inspired home layout. */
 .site-header {
   height: 64px;
   padding-inline: clamp(20px, 4vw, 54px);
