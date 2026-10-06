@@ -31,9 +31,8 @@ export default function Home() {
     <main className="home-page">
       <section className="hero">
         <div className="hero-copy">
-          <p className="hero-badge"><span className="status-dot" /> Free tools, no fuss</p>
-          <h1>Small tools.<br />Big <span>time savers.</span></h1>
-          <p className="hero-description">Handy tools for writing, coding and everyday tasks. Fast, private, and ready when you are.</p>
+          <h1>Small tools. <span>Big time savers.</span></h1>
+          <p className="hero-description">Free tools for writing, coding, and everyday tasks.</p>
           <form className="search-box" onSubmit={(event) => event.preventDefault()}>
             <span className="search-icon" aria-hidden="true">⌕</span>
             <input
@@ -64,7 +63,6 @@ export default function Home() {
             <Link href="/tools/json-formatter">JSON Formatter</Link>
             <Link href="/tools/slug-generator">Slug Generator</Link>
           </div>
-          <div className="hero-promises"><span>✓ No signup</span><span>✓ No uploads</span><span>✓ Free to use</span></div>
         </div>
       </section>
 

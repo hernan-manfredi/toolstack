@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { categories, tools } from "@/lib/tools";
-import { ThemeToggle } from "@/components/theme-toggle";
 
 const categoryCounts = categories.map((category) => ({
   ...category,
@@ -32,8 +31,9 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
           <Link href="/#about">About</Link>
         </nav>
         <div className="header-actions">
-          <Link className="header-link" href="/tools/word-counter">Try Word Counter <span aria-hidden="true">↗</span></Link>
-          <ThemeToggle />
+          <Link className="header-link" href="/tools/word-counter">
+            Try Word Counter <span aria-hidden="true">↗</span>
+          </Link>
         </div>
       </header>
       <div className="page-grid">
