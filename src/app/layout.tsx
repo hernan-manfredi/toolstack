@@ -24,21 +24,21 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "ToolNest | Free Online Tools for Everyday Work",
-    template: "%s | ToolNest",
+    default: "ToolStack | Free Online Tools for Everyday Work",
+    template: "%s | ToolStack",
   },
   description: "Free online tools for writing, code, quick calculations and everyday tasks. Fast browser-based utilities that do the job without extra setup.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
-    siteName: "ToolNest",
-    title: "ToolNest | Free Online Tools for Everyday Work",
+    siteName: "ToolStack",
+    title: "ToolStack | Free Online Tools for Everyday Work",
     description: "Useful little tools for writing, code, and quick calculations.",
     url: siteUrl,
   },
   twitter: {
     card: "summary",
-    title: "ToolNest | Free Online Tools for Everyday Work",
+    title: "ToolStack | Free Online Tools for Everyday Work",
     description: "Useful little tools for writing, code, and quick calculations.",
   },
 };

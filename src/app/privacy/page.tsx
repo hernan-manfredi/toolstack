@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "How ToolNest handles tool inputs and website visit data.",
+  description: "How ToolStack handles tool inputs and website visit data.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -12,9 +12,9 @@ export default function PrivacyPage() {
       <p className="eyebrow">The short version</p>
       <h1>Privacy policy</h1>
       <p className="legal-updated">Last updated: September 26, 2026</p>
-      <p>ToolNest is being built around small tools that do their work in your browser. This draft describes the current implementation and must be reviewed and completed for the country where the site is operated before public launch.</p>
+      <p>ToolStack is being built around small tools that do their work in your browser. This draft describes the current implementation and must be reviewed and completed for the country where the site is operated before public launch.</p>
       <h2>Tool inputs</h2>
-      <p>The text, code and calculator tools currently available process your input in the open browser tab. They do not upload that input to ToolNest servers. Do not treat this as a guarantee for tools added later; each new tool must explain its own processing before it is published.</p>
+      <p>The text, code and calculator tools currently available process your input in the open browser tab. They do not upload that input to ToolStack servers. Do not treat this as a guarantee for tools added later; each new tool must explain its own processing before it is published.</p>
       <h2>Website visits</h2>
       <p>The hosting provider may process standard request information, such as IP address, requested page and request time, to deliver and protect the website. Hosting and retention details should be added here before launch.</p>
       <h2>Cookies, analytics and advertising</h2>

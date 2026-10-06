@@ -11,9 +11,9 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
   return (
     <>
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="ToolNest home">
+        <Link className="brand" href="/" aria-label="ToolStack home">
           <span className="brand-mark" aria-hidden="true"><i /><i /><i /><i /></span>
-          <span>toolnest<span className="brand-period">.</span></span>
+          <span>toolstack<span className="brand-period">.</span></span>
         </Link>
         <nav className="desktop-nav" aria-label="Main navigation">
           <Link href="/#popular">All tools</Link>
@@ -40,10 +40,10 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
         <div className="page-content">{children}</div>
       </div>
       <footer className="site-footer">
-        <Link className="brand footer-brand" href="/"><span className="brand-mark" aria-hidden="true"><i /><i /><i /><i /></span><span>toolnest<span className="brand-period">.</span></span></Link>
+        <Link className="brand footer-brand" href="/"><span className="brand-mark" aria-hidden="true"><i /><i /><i /><i /></span><span>toolstack<span className="brand-period">.</span></span></Link>
         <span>Small tools for the things that add up.</span>
         <nav aria-label="Footer navigation"><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link><Link href="/contact">Contact</Link></nav>
-        <span className="copyright">© 2026 ToolNest</span>
+        <span className="copyright">© 2026 ToolStack</span>
       </footer>
     </>
   );

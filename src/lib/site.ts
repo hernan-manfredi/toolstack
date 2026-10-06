@@ -1,1 +1,1 @@
-export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://toolnest.tools").replace(/\/$/u, "");
+export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://toolstack.tools").replace(/\/$/u, "");
