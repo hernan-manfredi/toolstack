@@ -1,6 +1,6 @@
 # quicktools-online.com
 
-quicktools-online.com is a Next.js App Router project for a user-first online tools library. The current starter contains 12 working browser-side utilities, seven category routes, global search, a configurable Google AdSense Auto ads integration, and generated sitemap/robots routes. Tool inputs are not sent to an application server by the implemented tools.
+quicktools-online.com is a Next.js App Router project for a user-first online tools library. The current starter contains 12 working browser-side utilities, 15 broad category routes, global search, a configurable Google AdSense Auto ads integration, and generated sitemap/robots routes. Tool inputs are not sent to an application server by the implemented tools.
 
 ## Local Development
 

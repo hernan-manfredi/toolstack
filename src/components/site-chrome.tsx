@@ -1,10 +1,6 @@
 import Link from "next/link";
-import { categories, tools } from "@/lib/tools";
-
-const categoryCounts = categories.map((category) => ({
-  ...category,
-  count: tools.filter((tool) => tool.categorySlug === category.slug).length,
-}));
+import { AllToolsMenu } from "@/components/all-tools-menu";
+import { CategoryMenu } from "@/components/category-menu";
 
 export function SiteChrome({ children }: { children: React.ReactNode }) {
   return (
@@ -15,19 +11,8 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
           <span>quicktools-online.com</span>
         </Link>
         <nav className="desktop-nav" aria-label="Main navigation">
-          <Link href="/#popular">All tools</Link>
-          <details className="category-menu">
-            <summary>Categories <span aria-hidden="true">⌄</span></summary>
-            <div className="category-dropdown">
-              {categoryCounts.map((category) => (
-                <Link className="category-menu-item" href={`/${category.slug}`} key={category.slug}>
-                  <span className={`category-icon glyph-${category.color}`}>{category.icon}</span>
-                  <span><strong>{category.name}</strong><small>{category.count ? `${category.count} ${category.count === 1 ? "tool" : "tools"}` : "Coming soon"}</small></span>
-                  <span className="category-arrow" aria-hidden="true">↗</span>
-                </Link>
-              ))}
-            </div>
-          </details>
+          <AllToolsMenu />
+          <CategoryMenu />
           <Link href="/#about">About</Link>
         </nav>
         <div className="header-actions">

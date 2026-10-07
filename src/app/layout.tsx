@@ -25,22 +25,22 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "quicktools-online.com | Free Online Tools for Everyday Work",
+    default: "quicktools-online.com | Free Calculators, Converters & Online Tools",
     template: "%s | quicktools-online.com",
   },
-  description: "Free online tools for writing, code, quick calculations and everyday tasks. Fast browser-based utilities that do the job without extra setup.",
+  description: "Free online calculators, converters and practical tools for finance, work, business, health, writing, technology and everyday tasks.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     siteName: "quicktools-online.com",
-    title: "quicktools-online.com | Free Online Tools for Everyday Work",
-    description: "Useful little tools for writing, code, and quick calculations.",
+    title: "quicktools-online.com | Free Calculators, Converters & Online Tools",
+    description: "Free calculators, converters and useful online tools for everyday tasks.",
     url: siteUrl,
   },
   twitter: {
     card: "summary",
-    title: "quicktools-online.com | Free Online Tools for Everyday Work",
-    description: "Useful little tools for writing, code, and quick calculations.",
+    title: "quicktools-online.com | Free Calculators, Converters & Online Tools",
+    description: "Free calculators, converters and useful online tools for everyday tasks.",
   },
 };
 
