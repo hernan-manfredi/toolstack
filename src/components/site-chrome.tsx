@@ -2,6 +2,7 @@ import Link from "next/link";
 import { AllToolsMenu } from "@/components/all-tools-menu";
 import { CategoryMenu } from "@/components/category-menu";
 import { AppLauncher } from "@/components/app-launcher";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export function SiteChrome({ children }: { children: React.ReactNode }) {
   return (
@@ -16,7 +17,10 @@ export function SiteChrome({ children }: { children: React.ReactNode }) {
           <CategoryMenu />
           <Link href="/#about">About</Link>
         </nav>
-        <AppLauncher />
+        <div className="header-actions">
+          <ThemeToggle />
+          <AppLauncher />
+        </div>
       </header>
       <div className="page-grid">
         <div className="page-content">{children}</div>
