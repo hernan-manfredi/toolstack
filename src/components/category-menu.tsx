@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import Link from "next/link";
 import { categories, tools } from "@/lib/tools";
+import { ToolIcon } from "@/components/tool-icon";
 
 const categoryCounts = categories.map((category) => ({
   ...category,
@@ -53,7 +54,7 @@ export function CategoryMenu() {
       >
         {categoryCounts.map((category) => (
           <Link className="category-menu-item" href={`/${category.slug}`} key={category.slug}>
-            <span className={`category-icon glyph-${category.color}`}>{category.icon}</span>
+            <ToolIcon className={`category-icon glyph-${category.color}`} icon={category.icon} />
             <span><strong>{category.name}</strong><small>{category.count ? `${category.count} ${category.count === 1 ? "tool" : "tools"}` : "Coming soon"}</small></span>
             <span className="category-arrow" aria-hidden="true">↗</span>
           </Link>

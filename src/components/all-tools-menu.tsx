@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import Link from "next/link";
 import { categories, tools } from "@/lib/tools";
+import { ToolIcon } from "@/components/tool-icon";
 
 const toolGroups = categories
   .map((category) => ({
@@ -62,9 +63,7 @@ export function AllToolsMenu() {
               {category.tools.map((tool) => (
                 <li key={tool.slug}>
                   <Link className="all-tools-item" href={`/tools/${tool.slug}`}>
-                    <span className={`tool-glyph glyph-${category.color}`} aria-hidden="true">
-                      {tool.icon}
-                    </span>
+                    <ToolIcon className={`tool-glyph glyph-${category.color}`} icon={tool.icon} />
                     <span>{tool.name}</span>
                   </Link>
                 </li>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { categories, tools } from "@/lib/tools";
+import { ToolIcon } from "@/components/tool-icon";
 
 const availableCategories = categories.filter((category) =>
   tools.some((tool) => tool.categorySlug === category.slug),
@@ -40,7 +41,7 @@ export function ToolCatalog() {
       <div className="tool-card-grid" aria-live="polite">
         {visibleTools.map((tool) => (
           <Link className="tool-card" href={`/tools/${tool.slug}`} key={tool.slug}>
-            <span className={`tool-glyph glyph-${tool.color}`} aria-hidden="true">{tool.icon}</span>
+            <ToolIcon className={`tool-glyph glyph-${tool.color}`} icon={tool.icon} />
             <strong>{tool.name}</strong>
             <span className="tool-card-description">{tool.description}</span>
           </Link>

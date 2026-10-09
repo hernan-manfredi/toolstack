@@ -35,7 +35,8 @@ export const categories: Category[] = [
   { name: "Travel", slug: "travel", icon: "✈", color: "mint", description: "Estimate trip distances, travel times and costs." },
   { name: "Education & Science", slug: "education-science", icon: "∑", color: "lavender", description: "Tools for learning, grades, statistics and science." },
   { name: "Text & Writing", slug: "text-writing", icon: "Aa", color: "green", description: "Count, clean and reshape text for any task." },
-  { name: "Images & Files", slug: "images-files", icon: "IMG", color: "coral", description: "Everyday tools for working with image and document files." },
+  { name: "Images", slug: "images", icon: "▧", color: "coral", description: "Resize, compress and convert images privately in your browser." },
+  { name: "Files", slug: "files", icon: "PDF", color: "coral", description: "Merge and split PDF documents in your browser." },
   { name: "Internet & Technology", slug: "internet-technology", icon: "{ }", color: "yellow", description: "Fast browser-based helpers for common digital tasks." },
   { name: "Random & Fun", slug: "random-fun", icon: "✳", color: "pink", description: "Generate playful picks, identifiers and surprises." },
 ];
@@ -117,6 +118,36 @@ export const tools: ToolDefinition[] = [
     title: "JSON Minifier", intro: "Validate JSON and remove unnecessary whitespace to create a compact representation that is easier to transmit or store.",
     steps: ["Paste JSON into the input editor.", "Minify the valid JSON.", "Copy the compact output or fix the shown syntax error."], related: ["json-formatter", "base64-encoder-decoder", "url-encoder-decoder"],
     faqs: [{ question: "Does minifying JSON remove any data?", answer: "No. The minifier parses and serializes JSON without its formatting whitespace; the represented values stay the same." }, ...sharedFaq],
+  },
+  {
+    name: "Image Resizer", category: "Images", categorySlug: "images", slug: "image-resizer", description: "Resize an image to a chosen width while preserving its proportions.", icon: "↔", color: "coral", tags: "image resize photo width",
+    title: "Image Resizer", intro: "Resize an image to a target width while keeping its original proportions. Your image is processed locally in your browser.",
+    steps: ["Choose an image from your device.", "Enter the target width in pixels.", "Resize and download the result."], related: ["image-compressor", "image-converter", "pdf-merger"],
+    faqs: [{ question: "Which image types can I resize?", answer: "Common browser-supported image formats such as PNG, JPEG, WebP and GIF are supported. Animated images are resized as a still image of their first frame." }, ...sharedFaq],
+  },
+  {
+    name: "Image Compressor", category: "Images", categorySlug: "images", slug: "image-compressor", description: "Reduce image file size with adjustable JPEG quality.", icon: "↓", color: "mint", tags: "image compress photo reduce size",
+    title: "Image Compressor", intro: "Reduce an image's file size by exporting it as a JPEG with adjustable quality. Everything runs in your browser.",
+    steps: ["Choose an image from your device.", "Set the desired JPEG quality.", "Compress and download the smaller image."], related: ["image-resizer", "image-converter", "pdf-splitter"],
+    faqs: [{ question: "Does compression always make an image smaller?", answer: "JPEG compression often reduces photographs substantially, but the result depends on the source and quality setting." }, { question: "What happens to transparent pixels?", answer: "JPEG does not support transparency, so transparent areas are filled with white." }, ...sharedFaq],
+  },
+  {
+    name: "Image Converter", category: "Images", categorySlug: "images", slug: "image-converter", description: "Convert images between PNG, JPEG and WebP.", icon: "⇄", color: "blue", tags: "image convert png jpeg webp",
+    title: "Image Converter", intro: "Convert an image to PNG, JPEG or WebP without uploading it to a server.",
+    steps: ["Choose an image from your device.", "Select the format you want.", "Convert and download the new image."], related: ["image-resizer", "image-compressor", "pdf-merger"],
+    faqs: [{ question: "Which output formats are available?", answer: "You can export PNG, JPEG or WebP, subject to support in your browser." }, { question: "Will converting to JPEG keep transparency?", answer: "No. Transparent areas are filled with white because JPEG does not support transparency." }, ...sharedFaq],
+  },
+  {
+    name: "PDF Merger", category: "Files", categorySlug: "files", slug: "pdf-merger", description: "Combine multiple PDF documents into one file.", icon: "PDF", color: "coral", tags: "pdf merge combine join documents",
+    title: "PDF Merger", intro: "Combine two or more PDF documents into one, in the order you choose. The files stay on your device.",
+    steps: ["Select at least two PDF files.", "Arrange them in the order they should appear.", "Merge and download the combined PDF."], related: ["pdf-splitter", "image-converter", "image-resizer"],
+    faqs: [{ question: "Can I control the page order?", answer: "Yes. The merged document follows the order shown in the selected-files list." }, ...sharedFaq],
+  },
+  {
+    name: "PDF Splitter", category: "Files", categorySlug: "files", slug: "pdf-splitter", description: "Split a PDF into two documents at a page boundary.", icon: "PDF", color: "coral", tags: "pdf split separate pages documents",
+    title: "PDF Splitter", intro: "Split a PDF into two documents at a page you choose, then download both parts.",
+    steps: ["Choose a PDF document.", "Choose the page after which to split.", "Split and download both PDF documents."], related: ["pdf-merger", "image-converter", "image-compressor"],
+    faqs: [{ question: "Can I split a PDF at any page?", answer: "Yes. Choose a page from the first page through the page before the last page." }, ...sharedFaq],
   },
 ];
 
